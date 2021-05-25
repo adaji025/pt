@@ -1,0 +1,177 @@
+/* intro css */
+#intro{
+    background-color: rgb(13, 13, 80);
+    height: 100vh;
+}
+.top {
+    position: absolute;
+    color:white;
+    display: flex;
+    width: 95vw;
+    justify-content: space-between;
+}
+#intro .social-media-icons {
+    padding-top: 20px;
+}
+.logo {
+    margin: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.intro-content {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content:center;
+    align-items: center;
+}
+.intro-content .left img {
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.intro-content .right {
+    color: white;
+    font-size: 2rem;
+}
+.intro-closing {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: flex-start;
+}
+.intro-closing span {
+    display: block;
+    margin: 0 0 10px 0;
+}
+.intro-content-2 .left img {
+    border-radius: 50%;
+    width: 40vh;
+}
+.intro-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* about css */
+#about {
+    height: 40vh;
+}
+.title {
+    text-align: center;
+    padding: 20px;
+}
+ hr {
+    text-align: center;
+    width: 5%;
+}
+.about-content {
+    margin: auto;
+}
+
+
+
+/* skills css */
+#skills {
+    padding-top: 40px;
+    height: 100vh;
+    background-color: greenyellow;
+}
+.skill-set {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    
+}
+.skill-set .fab {
+    color: white;
+    text-align: center;
+}
+.skill-set span {
+    display: block;
+    font-size: 20px;
+}
+
+
+/* footer css */
+footer {
+    color: white;
+    background-color: black;
+    height: 40vh;
+}
+div.footer-content div.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div.footer-content div.footer-main button {
+    border-radius: 10px;
+    padding: 15px 32px;
+}
+.copy-right{
+    font-size: 30px;
+}
+footer .copy-right-and-nav {
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.nav span{
+    display: inline;
+    margin: 10px;
+    font-size: 30px;
+}
+@media screen and (max-width: 1021px) {
+    .intro-content {
+        flex-direction: column;
+    }
+    .intro-content .right .right-content {
+        line-height: 100%;
+        text-align: center;
+    }
+    .skill-set span {
+        font-size: 15px;
+  }
+  .intro-content .left img {
+    width: 70%;
+    justify-self: center;
+}
+}
+  @media screen and (max-width: 1145px) {
+    #about {
+        height: 70vh;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .skill-set {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .skill-set span {
+        font-size: 10px;
+  }
+  .skill-set .fab {
+    font-size: 2rem;
+}
+#about {
+    height: 80vh;
+}
+#intro .social-media-icons .fab {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+  }
+  @media screen and (max-width: 900px) {
+    footer {
+    padding: 30px;
+    height: 50vh;
+}
+  }
